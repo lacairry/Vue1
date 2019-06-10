@@ -1,0 +1,16 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+  <p>{{ message }}</p>
+  <p>Here's another one: {{message2}}</p>
+</div>
+
+<script>
+    const app = new Vue({
+        el: '#app', // 1
+        data: { // 2
+            message: 'Im a local property value',
+            message2: "Value 2"
+        }
+    });
+</script>
